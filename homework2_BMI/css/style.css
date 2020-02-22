@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* Reset page */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button{
+	outline: none;
+}
+input{
+	outline: none;
+}
+
+/**********************************************************************/
+
+
+/* Styling Page */
+body {
+    font-family: '微軟正黑體', 'Microsoft JhengHei';
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+.header {
+    background-color: #424242;
+    height: 300px;
+}
+
+.header .logo {
+    padding: 90px 0px;
+    float: left;
+}
+
+.header ul {
+    padding: 72px 60px;
+    float: left;
+}
+
+.header ul li {
+    font-size: 18px;
+    color: #FFD366;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+input{
+    margin-top: 5px;
+    text-indent: 10px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-size: 24px;
+    color: rgba(255,255,255,1);
+}
+.change{
+    float: left;
+    margin: 90px 0;
+}
+.resetbutton{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid cyan;
+    float: left;
+    text-align: center;
+    color: cyan;
+    position: relative;
+}
+.resetbutton h1{
+    padding-top: 35px;
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+.resetbutton h2{
+    font-size: 14px;
+    padding-bottom: 31px;
+}
+.resetbutton button{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    right: 1px;
+    bottom: 3px;
+    background: url(../img/icons_loop.png) no-repeat center;
+}
+.resetbutton button:hover{
+    transform: rotate(-90deg);
+    transition: 500ms;
+}
+.reset{
+    float: left;
+    font-size: 28px;
+    padding: 50px 0px 50px 8px;
+}
+
+.resultbutton{
+    font-family: '微軟正黑體', 'Microsoft JhengHei';
+    width: 120px;
+    height: 120px;
+    background-color: #FFD366;
+    color: #424242;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    float: left;
+}
+.resultbutton:hover{
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+}
+.resultbutton:active{
+    background-color: #DEA821;
+}
+
+.main{
+    background-color: 	#424242;
+    text-align: center;
+}
+.main h1{
+    color: whitesmoke;
+    font-size: 24px;
+    padding: 15px 0px;
+}
+.main ul{
+    padding: 20px 0px;
+}
+.main ul li{
+    background-color: whitesmoke;
+    width: 630px;
+    height: 70px;
+    text-align: left;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: all 200ms;
+}
+.main ul li:hover{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+}
+.label{
+    width: 20px;
+    height: 70px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    float: left;
+}
+ul li h2{
+    min-width: 80px;
+    font-size: 20px;
+    color: #4A4A4A;
+    float: left;
+    padding: 25px 10px;
+}
+ul li h3{
+    min-width: 45px;
+    font-size: 12px;
+    color: #424242;
+    float: left;
+    padding: 29px 5px;
+    text-align: right;
+}
+ul li h4{
+    min-width: 75px;
+    font-size: 20px;
+    color: #4A4A4A;
+    float: left;
+    padding: 25px 5px;
+
+}
+ul li p{
+    font-size: 12px;
+    text-align: center;
+    color: #424242;
+    padding: 23px 0px;
+    line-height: 15px;
+}
+.label.severeThinness{
+    background-color: #3A8FB7;
+    box-shadow: 2px 0 3px 0 rgba(58, 143, 183, 0.18);
+}
+.resetbutton.severeThinness{
+    color: #3A8FB7;
+    border-color: #3A8FB7;
+}
+.resetbutton.severeThinness button{
+    background-color: #3A8FB7;
+}
+.reset.severeThinness{
+    color: #3A8FB7;
+}
+.label.moderateThinness{
+    background-color: #33A6B8;
+    box-shadow: 2px 0 3px 0 rgba(46, 169, 223, 0.18);
+}
+.resetbutton.moderateThinness{
+    color: #33A6B8;
+    border-color: #33A6B8;
+}
+
+.resetbutton.moderateThinness button{
+    background-color: #33A6B8;
+}
+.reset.moderateThinness{
+    color: #33A6B8;
+}
+.label.mildThinness{
+    background-color: #5DAC81;
+    box-shadow: 2px 0 3px 0 rgba(93, 172, 129, 0.18);
+}
+.resetbutton.mildThinness{
+    color: #5DAC81;
+    border-color: #5DAC81;
+}
+.resetbutton.mildThinness button{
+    background-color: #5DAC81;
+}
+.reset.mildThinness{
+    color: #5DAC81;
+}
+.label.normal{
+    background-color: #90B44B;
+    box-shadow: 2px 0 3px 0 rgba(144, 180, 75, 0.18);
+}
+.resetbutton.normal{
+    color: #90B44B;
+    border-color: #90B44B;
+}
+.resetbutton.normal button{
+    background-color: #90B44B;
+}
+.reset.normal{
+    color: #90B44B;
+}
+.label.overWeight{
+    background-color: #F9BF45;
+    box-shadow: 2px 0 3px 0 rgba(249, 191, 69, 0.18);
+}
+.resetbutton.overWeight{
+    color: #F9BF45;
+    border-color: #F9BF45;
+}
+.resetbutton.overWeight button{
+    background-color: #F9BF45;
+}
+.reset.overWeight{
+    color: #F9BF45;
+}
+.label.obeseClass1{
+    background-color: #FC9F4D;
+    box-shadow: 2px 0 3px 0 rgba(252, 159, 77, 0.18);
+}
+.resetbutton.obeseClass1{
+    color: #FC9F4D;
+    border-color: #FC9F4D;
+}
+.resetbutton.obeseClass1 button{
+    background-color: #FC9F4D;
+}
+.reset.obeseClass1{
+    color: #FC9F4D;
+}
+.label.obeseClass2{
+    background-color: #C73E3A;
+    box-shadow: 2px 0 3px 0 rgba(199, 26, 58, 0.18);
+}
+.resetbutton.obeseClass2{
+    color: #C73E3A;
+    border-color: #C73E3A;
+}
+.resetbutton.obeseClass2 button{
+    background-color: #C73E3A;
+}
+.reset.obeseClass2{
+    color: #C73E3A;
+}
+.label.obeseClass3{
+    background-color: #D0104C;
+    box-shadow: 2px 0 3px 0 rgba(208,16,76,0.18);
+}
+.resetbutton.obeseClass3{
+    color: #D0104C;
+    border-color: #D0104C;
+}
+.resetbutton.obeseClass3 button{
+    background-color: #D0104C;
+}
+.reset.obeseClass3{
+    color: #D0104C;
+}
+.footer {
+    height: 95px;
+    background-color: #FFD366;
+}
+.footer img{
+    padding: 20px 0px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
